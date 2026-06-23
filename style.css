@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family: "Inter", sans-serif;
+} 
+.header-message {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.header-logo{
+    font-size: 32px;
+    font-weight: 700;
+}
+.nav-group {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.input-wrapper{
+    background-color: #f8f8f7;
+    padding: 10px 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 100px;
+
+}
+.input-wrapper .Search-input{
+    border: none;
+    background-color: transparent;
+}
+.input-wrapper .Search-input:focus{
+    outline: none;
+}
+.Search-input::placeholder{
+    font-family:  "Inter", sans-serif ;
+}
+.header-login-link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.cart-btn{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: -5px;
+}
+.cart-btn .cart-icon{
+    font-size: 20px;
+}
+.cart-btn span{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    color: white;
+    font-size: 10px;
+    border-radius: 100%;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+}
+.hero-container{
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.5)), url(Assets/image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-suheading{
+    font-weight: 700;
+    font-size: 14px;
+}
+.hero-heading{
+    font-size: 72px;
+    font-weight: 500;
+}
+.hero-wrapper{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.hero-paragraph{
+    font-size: 18px;
+    font-weight: 300;
+}
+.btn-wrapper{
+    display: flex;
+    gap: 10px;
+}
+.btn-primary{
+    display: inline-block;
+    padding: 17px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Before the following property, the transition offsets the page for a while,
+     To solve it add the following property to the Hover property in Outline too
+     use: */
+    border: 1px solid transparent;
+}
+.btn-outline{
+    display: inline-block;
+    padding: 17px 32px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-outline:hover{
+    background-color: white;
+    border: none;
+    color: black;
+    border: 1px solid transparent;
+}
+.Shop-by-category{
+    padding: 96px 48px;
+}
+.category-header{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.category-header h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.category-header .line{
+    height: 2px;
+    width: 64px;
+    background-color: #111111;
+}
+.cards-wrapper{
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+}
+.card{
+    height: 500px;
+    flex-grow: 1;
+    padding: 0 20px;
+    background: #0000001A;
+    border-radius: 5px;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-text{
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.card-text h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+.card-text a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.trending-now{
+    padding: 96px 48px;
+}
+.trending-now-header{
+    display: flex;
+    justify-content: space-between;
+}
+.trending-now-heading{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.trending-now-subheading{
+    font-weight: 300;
+}
+.trending-now-link{
+    text-decoration: none;
+    color: black;
+    align-self: flex-end;
+}
+.trending-now-card .card-description{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.trending-now-cards-wrapper{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.trending-now-card img{
+    width: 100%;
+    height: 424px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.trending-now-card .card-description-text h4{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.trending-now-card .card-description-text p{
+    font-weight: 300;
+    font-size: 12px;
+}
+.trending-now-card .card-price{
+    font-size: 14px;
+    font-weight: 300;
+}
+.philosophy{
+    display: flex;
+    gap: 64px;
+    padding: 96px 48px 0 48px;
+}
+.philosophy-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+    padding-bottom: 40px;
+}
+.philosophy-image{
+    width: 704px;
+    height: 700px;
+}
+.philosophy-subheading{
+    font-weight: 700;
+    font-size: 14px;
+    color: #666666;
+    text-transform: uppercase;
+}
+.philosophy-heading{
+    font-size: 36px;
+    font-weight: 500;
+}
+.philosophy-paragraph{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 300;
+}
+.philosophy-link{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: fit-content;
+}
